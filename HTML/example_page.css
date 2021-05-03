@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color:grey;
+    width: 400px;
+    margin: 20px;
+}
+
+.image {
+    padding: 15px;
+    /* margin: 20px; */
+}
+.info {
+padding: 10px;
+
+}
