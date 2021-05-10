@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selectors</title>
+    <style>
+        div > p {
+            color: red;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <p>Paragraaf 1 is in een div</p>
+        <p>Paragraaf 2 is in een div</p>
+        <section><p>Paragraaf 3 is in een div</p></section>
+        <p>Paragraaf 4 is in een div</p>
+
+    </div>
+    <p>Paragraaf 5 staat niet in een div</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+div p {
+    color: red;
+}
+
+#p1 {
+    color: green;
+}
+
+.class {
+    font-style:italic;
+}
+
+p.class {
+    color: purple;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div,h3 {
+    font-style:oblique;
+}
+
+div > h4 {
+    background-color: khaki;
+}
+
+div + #p2 {
+    color:blue
+}
+
+div ~ #p2 {
+    background-color: chocolate;
+}
+
+div #p3:hover {
+    color:orange
+}
+div #p3 {
+    color: black
+}
+
+.pseudo:hover #p4{
+    display: block;
+}
+
+#p4 {
+    display: none;
+    background-color: pink;
+    padding: 20px;
+}
+
+u:first-child {
+   color:rgb(20, 207, 220);
+}
