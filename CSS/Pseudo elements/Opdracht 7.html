@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+    <style>
+        .block1 {
+            position: absolute;
+            display:block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin:100px;
+        }
+
+        .block2::before {
+            position:relative;
+            content:" ";
+            display:inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(25deg);
+        }
+
+        .block3::after {
+            position: relative;
+            content:" ";
+            display:block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(50deg);
+            bottom: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div class=block1>
+    <div class=block2></div>
+    <div class=block3></div>  
+</div>
+ 
+</body>
+</html>

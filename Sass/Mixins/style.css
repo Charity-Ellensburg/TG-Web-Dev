@@ -1,0 +1,25 @@
+.colorChangingSquare {
+  width: 10em;
+  height: 10em;
+  background-color: yellow;
+  transition: background-color ease;
+}
+
+.colorChangingSquare:hover {
+  background-color: hotpink;
+  transition-duration: 3s;
+}
+
+.button {
+  width: 20em;
+  height: 10em;
+  background-color: red;
+  color: white;
+  box-shadow: black;
+}
+
+.button:hover {
+  background-color: pink;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+.frame {
+    display: flex;
+    position:absolute;
+    background-color: #E3BC9A;
+    width: 20em;
+    height: 20em;
+    border-radius: 10em;
+    margin-left: 30em;
+    margin-top: 10em;
+    box-shadow: -1px 2px 10px #493323,1px -2px 10px #493323;
+}
+
+.innerframe {
+    align-self: center;
+    justify-content: center;
+    background-color: #fcf1d5;
+    margin: auto;
+    width: 18em;
+    height: 18em;
+    border-radius: 10em;
+    border-style: solid;
+    border-color: #493323;
+    border-width: 1px;
+}
+
+h3 {
+    color: #493323;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.timer {
+    color:#493323;
+    text-align: center;
+    margin-top: 1em;
+    font-size:3.5em;
+}
+.buttons {
+    display: flex;
+    
+}
+
+button {
+    display: flex;
+    background-color: white;
+    width: 3em;
+    height: 3em;
+    border-radius: 2em;
+    border-style: none;
+
+}

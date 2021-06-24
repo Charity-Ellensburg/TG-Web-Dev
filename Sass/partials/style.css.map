@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACEA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECHL,MAAM;EDIjB,KAAK,ECLS,KAAY;EDM1B,WAAW,EAAE,gEAAgE;CAIhF;;AATD,AAMQ,OAND,AAME,MAAM,CAAC;EACJ,gBAAgB,ECNP,MAAM;CDOlB",
+    "sources": [
+        "style.scss",
+        "assets/_button.scss",
+        "assets/_colors.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

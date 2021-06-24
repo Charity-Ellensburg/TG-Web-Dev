@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4</title>
+    <style>
+.container {
+    position: relative;
+    border: 1px solid black;
+    height: 30em;
+    width: 60em;   
+}
+
+.box {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid black;
+    width: 3em;
+    height: 3em;
+    top: 12em;
+    left: 28em;
+    transition: 2s ease-in-out;
+}
+
+.container:hover .box1 {
+    top: 0em;
+    left: 57em;
+    transition: top 4s, left 2s 1s;
+}
+
+.container:hover .box2 {
+    top: 0em;
+    left: 0em;
+    transition: top 4s, left 2s 1s;
+}
+
+.container:hover .box3 {
+    top: 27em;
+    left: 0em;
+    transition: top 2s 3s, left 1s 2s; 
+}
+
+p {
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="box box1"><p>1</p></div>
+        <div class="box box2"><p>2</p></div>
+        <div class="box box3"><p>3</p></div>
+</div>            
+</body>
+</html>

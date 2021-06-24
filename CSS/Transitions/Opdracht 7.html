@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 7</title>
+</head>
+    <style>
+        .container {
+            position: absolute;
+            width:20em;
+            height: 20em;
+            background-color: grey; 
+        }
+
+        .animation {
+            position: relative;
+            width:5em;
+            height:5em;
+            background-color:red;
+            margin:7em;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+        }
+
+        @keyframes change {
+            0% {background-color: orange; rotate: 36deg; border-radius: 3em 3em 3em 3em; }
+            20% {background-color: yellow; rotate: 40deg; border-radius: 3em 3em 3em 0em; }
+            40% {background-color: green; rotate: 60deg; border-radius: 3em 3em 0em 0em;}
+            60% {background-color: blue; rotate: 80deg; border-radius: 3em 0em 0em 0em;}
+            80% {background-color: violet; rotate: 110deg;}
+
+        }
+
+    </style>
+<body>
+    <div class ="container">
+        <div class="animation"></div>
+    </div>
+</body>
+</html>

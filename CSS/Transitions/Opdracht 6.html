@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6</title>
+    <style>
+        .container {
+            position: absolute;
+            background-color:lightgoldenrodyellow;
+            border: 1px solid black;
+            border-radius: 1em;
+            width: 60em;
+            height: 30em;
+            padding:5em;
+        }
+
+        .card {
+            position: absolute;
+            background-color: lightgreen;
+            border: 1px solid black;
+            border-radius: 1em;
+            width:15em;
+            height: 18em;
+        }
+
+        p {
+            padding: 2em;
+        }
+
+        h2 {
+            padding-left:1em;
+        }
+
+        .card1 {
+            position: relative;
+            bottom:0em;
+            left:0em;
+            transition: ease-in-out 1s;
+        }
+
+        .card2 {
+            position: relative;
+            bottom:290px;
+            left:50px;
+            transition: ease-in-out 1s;
+        }
+
+        .card3 {
+            position: relative;
+            bottom:580px;
+            left:100px;
+            transition: ease-in-out 1s;
+        }
+
+        .card4 {
+            position: relative;
+            bottom:870px;
+            left:150px;
+            transition: ease-in-out 1s;
+        }
+
+        .card4:hover {
+            color: lightcoral;
+            transform: translateY(-2rem);
+        }
+
+        .card3:hover {
+            color: lightcoral;
+            transform: translateY(-2rem);
+        }
+
+        .card2:hover {
+            color: lightcoral;
+            transform: translateY(-2rem);
+        }
+
+        .card1:hover {
+            transform: translateY(-2rem);
+        }
+.card:hover ~ .card {
+    transform: translateX(12rem);
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card1">
+            <p>Tom Nook</p>
+            <h2>Animal Crossing playing cards</h2>
+            <p>Made by:<br>Charity Ellensburg</p>
+        </div>
+        <div class="card card2">
+            <p>Isabelle</p>
+            <h2>Animal Crossing playing cards</h2>
+            <p>Made by:<br>Charity Ellensburg</p>
+        </div>
+        <div class="card card3">
+            <p>Timmy & Tommy</p>
+            <h2>Animal Crossing playing cards</h2>
+            <p>Made by:<br>Charity Ellensburg</p>
+        </div>
+        <div class="card card4">
+            <p>Able Sisters</p>
+            <h2>Animal Crossing playing cards</h2>
+            <p>Made by:<br>Charity Ellensburg</p>
+        </div>
+    </div>   
+</body>
+</html>

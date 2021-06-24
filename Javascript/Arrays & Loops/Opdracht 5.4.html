@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5.4</title>
+</head>
+<body>
+
+    <div>Some Text</div>
+    <div>Some Text</div>
+    
+<script>
+    let arrayLike = document.querySelectorAll('div')
+    console.log(arrayLike)
+//a.
+    let opdrachtA = Array.from(arrayLike)
+    console.log(opdrachtA)
+    
+//b.
+    let colors = ["Red", "Yellow", "Blue", "Magenta", "Orange", "purple", "Black"] 
+    let results =  colors.filter(colors => colors.length > 4);
+    console.log(results)  
+
+//c.
+    let numbers = [8, 27, 5, 14, 18, 19]
+    let found = numbers.find(element => element > 10)
+    console.log(found)
+
+//d.
+    even = (element) => element % 2 === 0;
+    console.log(numbers.some(even))
+
+//e.
+    let belowThirty = (currentValue) => currentValue < 40;
+    console.log(numbers.every(belowThirty));
+
+//f.
+console.log(numbers.includes(14));
+
+</script>    
+</body>
+</html>

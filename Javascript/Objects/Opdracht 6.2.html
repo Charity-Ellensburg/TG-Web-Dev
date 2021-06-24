@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6.2</title>
+</head>
+<body>
+
+<script>
+// function club(names, clubType, members); {
+//     this.name = names
+//     this.clubType = clubType
+//     this.members = members 
+    
+
+//         function contact(adress, phoneNr, contactPerson); {
+//             this.adress = adress
+//             this.phoneNr = phoneNr
+//             this.contactPerson = contactPerson
+//         }
+//     }
+
+class club {
+    constructor(name, clubType, members) {
+        this.name = 'Ocean'
+        this.club = 'Swimming'
+        this.members = 6
+    }
+    contact(adress, phone, contactperson) {
+        this.adress = 'street 123'
+        this.phone = '06-12345678'
+        this.contactperson = 'John Doe'
+    }
+}
+
+let swimming = new club('Ocean', 'Swimming', 6)
+console.log(swimming)
+let horseBackRiding = new club('Cowboy', 'horseriding', 10, (contact('street 123', '06-12345678', 'Jane Doe')))
+console.log(horseBackriding)
+</script>
+</body>
+</html>

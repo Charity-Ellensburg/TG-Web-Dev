@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 6.1</title>
+</head>
+<body>
+
+<script>
+// Object Constructed
+    let objectConstructed = new Object();  
+        objectConstructed.type = "dog" 
+        objectConstructed.name = "Ace" 
+    console.log(objectConstructed)
+
+// Literal Constructed
+    let literallyConstructed = {
+        type : "Cat",
+        name : "Boots"
+    }
+    console.log(literallyConstructed)
+
+// Function Constructed    
+    function Pet(type, name) {
+        this.type = type
+        this.name = name
+    }
+    let functionConstructed = new Pet("Bunny", "Hoops")
+    console.log(functionConstructed)
+
+// Singleton Constructed
+    let singletonConstructed = new function() {
+        this.type = "Fish"
+        this.name = "Nemo"
+    }
+    console.log(singletonConstructed)
+
+// Class Constructed    
+    class Animal {
+        constructor(type, name) {
+            this.type = "Bird"
+            this.name = "Arthur"
+        }
+    writeBadCode() {
+        console.log("test")
+    }  
+    }
+    let classConstructed = new Animal("Bird", "Arthur")
+    console.log(classConstructed)
+
+//b.
+let dog = Object.create(objectConstructed);
+dog.type = 'Retriever';
+dog.name = 'Rex'
+console.log(dog)
+
+let cat = Object.create(literallyConstructed);
+cat.type = 'Longhaired'
+cat.name = 'Garfield'
+console.log(cat)
+
+let bunny = Object.create(functionConstructed)
+bunny.type = 'Fuzzy Lop'
+bunny.name = 'Bugs Bunny'
+console.log(bunny)
+
+let fish = Object.create(singletonConstructed)
+fish.type = "Doctor fish"
+fish.name = 'Dory'
+console.log(fish)
+
+let bird = Object.create(classConstructed)
+bird.type = 'Kanari'
+bird.name = 'Tweety'
+console.log(bird)
+
+//c.
+function person(name, age) {
+    this.name = name
+    this.age = age
+}
+let charity = new person('Charity', 27)
+let joshin = new person('Joshin', 28)
+let tyrell = new person('Tyrell', 6)
+let imani = new person('Imani', 2)
+let anaya = new person('Anaya', 1)
+let david = new person('David', 45)
+let ritzyano = new person('Ritzyano', 21)
+let chariva = new person('Chariva', 27)
+let xavienne = new person('Xavienne', 28)
+let ariana = new person('Ariana', 6)
+
+let people = [charity, joshin, tyrell, imani, anaya, david, ritzyano, chariva, xavienne, ariana]
+people.sort((a, b) => a.age > b.age ? 1 : -1 )
+console.log(people)
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.image {
+  height: 800px;
+  width: auto;
+}
+
+.image {
+  height: 500px;
+  width: auto;
+}
+
+.image {
+  height: 100px;
+  width: auto;
+}
+
+.image {
+  height: -100px;
+  width: auto;
+}
+
+.image {
+  height: 600px;
+  width: auto;
+}
+
+.image {
+  height: 750px;
+  width: auto;
+}
+
+.image {
+  height: 30px / 5px;
+  width: 24px/ 4;
+}
+
+.image {
+  height: 6;
+  width: 6px;
+}
+/*# sourceMappingURL=Operators.css.map */

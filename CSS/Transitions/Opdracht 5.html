@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5</title>
+    <style>
+        .containerbig {
+            border: 2px solid black;
+            height:30em;
+            width: 30em;
+        }
+        .container {
+            position: relative;
+            width: 10em;
+            height: 10em;
+            border: 6px solid black;   
+        }
+
+        img {
+            width: 10em;
+            height: 10em;
+        }
+
+        .cover {
+            width: 5em;
+            height: 5em;
+        }
+
+        .cover {
+            position: absolute;
+            bottom:0em;
+            width: 10em;
+            height: 10em;
+            background-color:mediumspringgreen ;
+            transition: ease-in-out 2s;
+        }
+
+        .containerbig:hover .cover {
+            transform: rotate(45deg) translateX(10em);
+    
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="containerbig">
+        <div class="container">
+            <div class="image">
+                <img src="image/Tom Nook.jpg" alt=""></div>
+            <div class="cover"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+@mixin button {
+    width: 20em;
+    height: 10em;
+    background-color: red;
+    color: white;
+    box-shadow: black;
+     &:hover {
+         background-color: pink;
+         color: black;
+     }
+}
+
+@mixin color-box {
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    transition: background-color ease;
+        &:hover { 
+            background-color: hotpink;
+            transition-duration: 3s;
+        }
+}        

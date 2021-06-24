@@ -1,0 +1,86 @@
+// Opdracht 1
+.image {
+    height: 400px * 2;
+    width: auto;
+}
+
+        // verwachting opdracht 1
+        // .image {
+        //     height: 800px;
+        //     width: auto;
+        // }
+
+// Opdracht 2
+.image {
+    height: 400px + 100;
+    width: auto;
+}
+
+        // verwachting opdracht 2
+        // .image {
+        //     height: 500px;
+        //     width: auto;
+        // }
+
+// Opdracht 3
+.image {
+    height: 400px - 300px;
+    width: auto;        
+}
+        // verwachting opdracht 3
+        // .image {
+        //     height: 100px;
+        //     width: auto;
+        // }
+
+// Opdracht 4
+.image {
+    height: 200px + 100px - 400px;
+    width: auto;        
+}
+        // verwachting opdracht 4
+        // .image {
+        //     height: -100px;
+        //     width: auto;
+        // }
+
+// Opdracht 5
+.image {
+    height: 200px * 3;
+    width: auto;        
+}
+        // verwachting opdracht 5
+        // .image {
+        //     height: 600px;
+        //     width: auto;
+        // }
+
+// Opdracht 6
+.image {
+    height: 750px; //* 1px;
+    width: auto;        
+}
+        // verwachting opdracht 6
+        // De code klopt niet want 750px kan niet vermenigvuldigd worden door 1px. Inplaats daarvan kan je gewoon 750px neerzetten.
+        // .image {
+        //     height: 750px;
+        //     width: auto;
+        // }  
+
+// Opdracht 7
+.image {
+    height: 30px / 5px;
+    width: 24px/ 4;
+}
+        //verwachting opdracht7
+        // de code klopt hier niet omdat hij niet tussen haakjes is neergezet. zonder de haakjes berekent hij de som niet.
+        // height: (30px / 5px;)
+        //  width: (24px/ 4;)
+
+// opdracht 8
+.image {
+    height: (30px / 5px);
+    width: (24px/ 4) ;
+}
+
+        

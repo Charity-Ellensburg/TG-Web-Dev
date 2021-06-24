@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 4.4</title>
+</head>
+<body>
+<div id="myName"></div>
+
+ <input type="text" id="example" onchange="namePrint()">
+
+<script>
+
+
+
+// function nameChecker(){
+// let name = document.getElementById("example").value;
+// console.log(name)
+// // let name = "Charity"
+
+//     if (name === "Charity") {
+// // console.log("Hey, it's Charity!");
+//     return "Hey, it's Charity!"
+
+// } else if (name === "Manon"){
+//     // console.log("Hey, it's Manon!")
+//     return "Hey, it's Manon!"
+// } else if (name === "Ephrem"){
+//     // console.log('Hey, it's Ephrem')
+//     return "Hey, it's Ephrem!"
+// } else if (name === "Joeri"){
+//     // console.log("Hey, it's Joeri!")
+//     return "Hey, it's Joeri!"
+// } else {
+//     // console.log("Not a person")
+//     return "Not a person"
+// }
+//     }
+
+
+// function namePrint(){
+//     document.getElementById("myName").innerText = nameChecker();
+// }   
+
+
+// console.log(namePrint())
+// console.log(nameChecker())
+
+//ARROW FUNCTION
+
+
+        nameChecker => 
+        let name = document.getElementById("example").value;
+
+            if (name === "Charity") {
+            return "Hey, it's Charity!"
+
+        } else if (name === "Manon"){
+            return "Hey, it's Manon!"
+        } else if (name === "Ephrem"){
+            return "Hey, it's Ephrem!"
+        } else if (name === "Joeri"){
+            return "Hey, it's Joeri!"
+        } else {
+            return "Not a person"
+        }
+            
+
+
+        namePrint() =>
+            document.getElementById("myName").innerText = nameChecker();
+   
+
+</script>    
+</body>
+</html>

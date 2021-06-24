@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5.3</title>
+</head>
+<body>
+
+    
+<script>
+    const dutchSports = ["Voetbal", "Hockey", "Schaatsen"]
+    console.log(dutchSports)
+
+//a.
+    dutchSports.push("Zeilen", "Zwemmen")
+    console.log(dutchSports)
+
+//b.
+    dutchSports.unshift("Volleybal")
+    console.log(dutchSports)
+
+//c.
+    let ballSports = dutchSports.slice(0, 2)
+    console.log(ballSports)
+
+//d.
+    dutchSports.splice(0, 2)
+    console.log(dutchSports)
+
+//e. 
+    dutchSports.sort()
+    console.log(dutchSports)
+
+//f.
+    dutchSports.forEach(sports => console.log(sports))
+
+//g.  
+    let sportsLenght = dutchSports.map(item => item.length)
+    console.log(sportsLenght)
+</script>    
+</body>
+</html>

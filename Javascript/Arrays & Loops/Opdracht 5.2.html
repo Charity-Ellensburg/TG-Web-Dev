@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 5.2</title>
+</head>
+<body>
+
+    
+<script>
+//a.
+/*
+ const dutchSport = ["Voetbal", "Hockey", "Schaatsen"];
+ let myArray = dutchSport.length; 
+ 
+ for (let i=0; i < myArray; i++) {
+ console.log(dutchSport[i])
+ }
+
+//b.
+ for (const index in dutchSport) {
+     console.log(index)
+ }
+
+ for ( const item of dutchSport) {
+    console.log(item)
+}
+
+//c.
+/*  for (let i=0; i < 20; i++ ) {
+    if (i === 0) {
+        console.log(i + " is even");
+    }
+    else if (i % 2 === 0) {
+        console.log(i + " is even");
+    } 
+    else {
+        console.log(i + " is odd");
+    }
+} */
+
+//d. & e. & f.
+/*  for (let i=0; i <3; i++){
+    for (let nr=1; nr < 11; nr++) {
+        console.log(nr)
+    }
+    for (let i=2; i <21; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+    for (let i=3; i <31; i++) {
+        if (i % 3 === 0) {
+            console.log(i);
+        }
+    }
+} */
+
+//g.
+/*  let myFib = [n1=0, n2=1]
+
+    for (let i = 1; i <= 50; i++) {
+    console.log(n1);
+    nextNr = n1 + n2;
+    n1 = n2;
+    n2 = nextNr;
+} */
+
+//h.
+
+let sortArray = [2,7,5,10,4,9,3,1,8,6]
+let n = sortArray.lenght;
+console.log(sortArray)
+
+function bubbleSort(){
+
+let sortArray = [2,7,5,10,4,9,3,1,8,6]
+let n = sortArray.lenght;
+
+for (let i=0; i < n - 1; i++){
+    for(let j = 0; j <= n - i - 1; j++){
+        //Swap the numbers
+        if(sortArray[j] > sortArray[j+1]){
+          [sortArray[j], sortArray[j+1]] = [sortArray[j+1], sortArray[j]];
+        }
+    }
+  }
+  
+  return sortArray;
+}
+console.log(sortArray)
+</script>    
+</body>
+</html>

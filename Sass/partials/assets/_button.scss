@@ -1,0 +1,12 @@
+@import "./colors";
+
+.button {
+    width: 20em;
+    height: 15em;
+    background-color: $button-color;
+    color: $secondary-color;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        &:hover {
+            background-color: $button-color-hover;
+        }
+}
