@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(43, 42, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    width:500px;
+    /* right: 200px; */
+}
+
+.E-part1 {
+    position: absolute;
+    background-color: rgb(57, 56, 61);
+    width: 1em;
+    height: 20em;
+    border-radius:10px;
+    animation: E-part1 1.5s 1s infinite;
+    /* animation-iteration-count: 10; */
+
+    
+}
+
+@keyframes E-part1 {
+    0% {
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.E-part2 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 10em;
+    height: 1em;
+    border-radius:10px; 
+    left: 20px;
+    animation: E-part2 1s infinite;
+}
+
+@keyframes E-part2 {
+    0%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.E-part3 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 10em;
+    height: 1em;
+    border-radius:10px; 
+    left: 20px;
+    top: 140px;
+    animation: E-part3 1s 1.5s infinite;
+}
+
+@keyframes E-part3 {
+    0%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.E-part4 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 10em;
+    height: 1em;
+    border-radius:10px; 
+    left: 20px;
+    top: 270px;
+    animation: E-part4 1.5s 0.5s infinite;
+}
+
+@keyframes E-part4 {
+    0%, 20%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.N-part1 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 1em;
+    height: 20em;
+    border-radius:10px;
+    left: 250px;
+    bottom:50px;
+    animation: N-part1 1.5s 2s infinite;
+}
+
+@keyframes N-part1 {
+    0%, 20%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.N-part2 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 1em;
+    height: 22em;
+    border-radius:10px;
+    left: 340px;
+    bottom:384px;
+    rotate: -25deg;
+    animation: N-part2 1.5s 2.5s infinite;
+}
+
+@keyframes N-part2 {
+    0%, 20%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.N-part3 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 1em;
+    height: 20em;
+    border-radius:10px;
+    left: 432px;
+    bottom:720px;
+    animation: N-part3 0.5s 3s infinite;
+}
+
+@keyframes N-part3 {
+    0%, 20%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.D-part1 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 1em;
+    height: 20em;
+    border-radius:10px;
+    left: 500px;
+    bottom:1040px;
+    animation: D-part1 2s 2s infinite;
+}
+
+@keyframes D-part1 {
+    0%, 20%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        background-color: White;
+    }
+}
+
+.D-part2 {
+    position: relative;
+    background-color: rgb(43, 42, 46);
+    width: 10em;
+    height: 18em;
+    border-top-right-radius:5em;
+    border-bottom-right-radius:5em;
+    border: 15px solid white;
+    border-left:0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 520px;
+    bottom:1360px;
+    animation: D-part2 1s infinite;
+}
+
+
+@keyframes D-part2 {
+    0%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white,
+        inset 0 0 10px white; 
+        /* background-color: White; */
+    }
+}
+
+@keyframes D-part4 {
+    0%{
+        background-color: rgb(57, 56, 61) 
+    }
+    100% {
+        box-shadow: 0 0 10px white; 
+        /* background-color: White; */
+    }
+}
+
+
+/* .D-part3 {
+    position: relative;
+    background-color: rgb(57, 56, 61);
+    width: 10em;
+    height: 18.5em;
+    border-top-right-radius:4em;
+    border-bottom-right-radius:4em;
+    border: 1px solid white;
+    border-left:0;
+    /* border-top-left-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
+    left: 520px;
+    bottom:1665px;
+    animation: ;
+} */

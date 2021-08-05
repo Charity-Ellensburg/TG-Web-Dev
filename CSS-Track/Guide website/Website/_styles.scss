@@ -1,0 +1,18 @@
+$primary-1:  #ffc600;
+$primary-2:  #04b404;
+$primary-3:  #a7e6a7;
+$text:  #7a3b00;
+$background: white;
+
+@font-face {
+    font-family: 'FinkHeavy';
+    src: url() format('truetype');
+}
+
+h1, li, h2 {
+    font-family: 'FinkHeavy';
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

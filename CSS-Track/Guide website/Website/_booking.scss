@@ -1,0 +1,52 @@
+.booking {
+    border-bottom: 2px dotted $primary-3;
+    padding-top: 1em;
+    padding-bottom: 1em
+    ;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(/Images/Animal-Crossing-New-Horizons-71.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 30%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.booking-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5em;
+}
+
+.flightadd {
+    width: 38em;
+    height: 15em;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form {
+    background-color: rgb(79, 166, 236);
+    // border: 1px solid rgb(255, 230, 0);
+    border-radius: 10px;
+    padding: 1em;
+    color: white;
+}
+
+hr {
+    background-color: rgb(255, 230, 0);
+    height: 0.5em;
+    border: 0;
+}
+
+h2 {
+    text-align: center;
+}

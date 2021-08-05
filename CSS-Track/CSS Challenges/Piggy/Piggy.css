@@ -1,0 +1,161 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* wrapper containing the pig as a whole */
+.wrapper1 {
+    position:absolute;
+}
+
+/* head of the pig */
+.head {
+    position: relative;
+    width:400px;
+    height:400px;
+    background-color: pink;
+    border-radius: 50%;
+    top: 100px;
+}
+
+/* nose of the pig */
+.bignose {
+    position: relative;
+    display: flex;
+    width: 150px;
+    height: 100px;
+    background-color:rgb(228, 169, 179) ;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 125px;
+    bottom: 50px;
+}
+
+.smallnoseleft {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:palevioletred ;  
+}
+
+.smallnoseright {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:palevioletred ;
+}
+
+/* eyes of the pig */
+.eyes {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 130px;
+    perspective: 1000px;
+    animation: blinking 3s infinite;
+}
+
+@keyframes blinking {
+    0%, 100% {
+        transform: rotateX(0);
+    }
+    10% {
+        transform: rotateX(90deg)
+    }
+}
+
+.lefteye {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.righteye {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.leftpupil {
+    position: relative;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: black;
+    left:25px;
+    top: 25px; 
+}
+
+.rightpupil {
+    position: relative;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: black;
+    left:25px;
+    top: 25px;
+}
+
+/* ears of the pig */
+.ears {
+    position: relative;
+    top: 85px;
+}
+.rightear {
+    position: relative;
+    background-color: palevioletred;
+    width: 150px;
+    height: 150px;
+    border: 40px solid pink;
+    border-radius: 100% 10% 100% 0% / 100% 10% 100% 0% ;
+    left: 240px;
+    top: 260px;
+    z-index: -1;
+}
+
+.leftear {
+    position: relative;
+    background-color: palevioletred;
+    width: 150px;
+    height: 150px;
+    border: 40px solid pink;
+    border-radius: 10% 100% 10% 100% / 10% 100% 10% 100%; 
+    right: 80px;
+    top: 480px;
+    z-index: -1;
+}
+
+/* flower of the pig */
+
+.flower__head {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: lightsalmon;
+    margin-top: 50px;
+  }
+  
+  .flower__head::after, .flower__head::before {
+    content: '';
+    position: absolute;
+    background: lightsalmon;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    transform: rotate(60deg);
+  }
+
+  .flower__head::before {
+    transform: rotate(-60deg);
+  }
+
+  .flower {
+      position: relative;
+      bottom: 410px
+  }

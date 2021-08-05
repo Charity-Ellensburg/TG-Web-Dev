@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+    background-color: coral;
+    border-radius: 10px;
+}
+
+.ball {
+    position: relative;
+    width: 3.1em;
+    height: 3.1em;
+    background-color: white;
+    border-radius: 50%;
+    animation: motion 2s infinite;
+}
+
+.ball2 {
+    position: absolute;
+    width: 3.1em;
+    height: 3.1em;
+    background-color: rgba(255, 255, 255, 0.400);
+    border-radius: 50%;
+    animation: motion 2s 40ms infinite;
+}
+
+.ball3 {
+    position: absolute;
+    width: 3.1em;
+    height: 3.1em;
+    background-color: rgba(255, 255, 255, 0.200);
+    border-radius: 50%;
+    animation: motion 2s 70ms infinite;
+}
+
+@keyframes motion {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: 85%;
+    }
+}

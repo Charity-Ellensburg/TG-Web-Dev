@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    justify-items: center;   
+}
+
+.frame {
+    position: relative;
+    width: 40em;
+    height: 27em;
+    background-color: rgb(121, 121, 121); 
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.leftbtn {
+    position: absolute;
+    height: 27em;
+    width: 3em;
+    background-color: rgba(179, 49, 49, 0.5);
+}
+
+.rightbtn {
+    position: absolute;
+    right: 0;
+    height: 27em;
+    width: 3em;
+    background-color: rgba(189, 54, 54, 0.5);
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: black;
+    margin-top: 11em;
+
+}
+
+.leftbtn:hover {
+    transition: 0.5s;
+    background-color: rgba(206, 206, 206, 0.5);    
+}
+
+.rightbtn:hover {
+    transition: 0.5s;
+    background-color: rgba(206, 206, 206, 0.5);
+}
+
+img {
+    position: absolute;
+    height: 100%;
+    border-radius: 1em;
+    overflow: hidden;
+      
+}
