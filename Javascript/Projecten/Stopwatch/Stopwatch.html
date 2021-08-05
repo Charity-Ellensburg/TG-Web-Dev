@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
     <link rel="stylesheet" href="Stopwatch.css">
+    
 </head>
 <body>
 
 <div class="frame">
     <div class="innerframe">
         <h3>CHARITY</h3>
-        <h1 class="timer">00:00:00</h1>
+        <div class="display" id="display">00:00:00</div>
         <div class="buttons">  
-            <button onclick class="start">start</button>
-            <button onclick class="pause">pause</button>
-            <button onclick class="stop">stop</button>
+            <button class="start" id="start" onclick="start()"><p>start</p></button>
+            <button class="pause" id="pause" onclick="pause()"><p>pause</p></button>
+            <button class="stop" id="stop" onclick="stop()"><p>stop</p></button>
         </div>
     </div>
 </div>

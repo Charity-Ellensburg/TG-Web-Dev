@@ -1,0 +1,107 @@
+.hotspots {
+    border-bottom: 2px dotted $primary-3;
+    padding-top: 1em;
+    padding-bottom: 1em
+    ;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url(/Images/20_HBD_Animal_1920_1080.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 30%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column {
+    background-color:$primary-3;
+    border: 1px solid $primary-2;
+    border-radius: 20px;
+    margin-top: 1em;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;    
+}
+
+.content {
+    text-align: center;
+
+}
+#hot {
+&:hover {
+    opacity: 0.7;
+}
+}
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+.carousel {
+    background: #FAFAFA;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+  }
+  
+  /* fade in lazy loaded image */
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+  }
+  
