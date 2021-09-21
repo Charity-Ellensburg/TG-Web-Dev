@@ -1,8 +1,6 @@
 .booking {
     border-bottom: 2px dotted $primary-3;
-    padding-top: 1em;
-    padding-bottom: 1em
-    ;
+    padding-bottom: 1em;
     position: relative;
     &::after {
         content: "";
@@ -19,30 +17,86 @@
     }
 }
 
+.header-add {
+    position: relative;
+    height:auto;
+    margin-bottom: 2em;
+}
+
+.intro-booking {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+        color: white;
+        text-shadow: 5px 5px 1px $booking, -2px -2px 1px $booking;
+    h1 {
+        margin:0;
+    }
+}
+
 .booking-content {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    flex-wrap: wrap;
     padding: 0 5em;
 }
 
-.flightadd {
-    width: 38em;
-    height: 15em;
-    border: 1px solid lightblue;
+.left-add {
+    background-color: $booking;
+    display: flex;
+    justify-content: center;
+    width: 40em;
+    margin-right:2em;
     border-radius: 10px;
     overflow: hidden;
+    margin: 0.5em;
+    img {
+        object-fit: contain;
+        width: 100%;
+        
+    }
 }
 
-.form {
-    background-color: rgb(79, 166, 236);
-    // border: 1px solid rgb(255, 230, 0);
+.bookingform {
+    display: flex;
+    background-color: $booking;
     border-radius: 10px;
     padding: 1em;
     color: white;
 }
 
+#flight {
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+input[type=text] {
+    width: 30%;
+    border-radius: 5px;
+    border:0;
+   &:focus {
+        background-color: $booking2;
+  }
+}
+
+input[type=button] {
+    background-color: $booking2;
+    border-radius: 8px;
+    border: 0;
+    padding: 1em;
+    transition: 0.5s;
+    box-shadow: 0px 1px 2px grey;
+    &:hover {
+        background-color: white;
+        color:$booking;
+    }
+}
+
 hr {
-    background-color: rgb(255, 230, 0);
+    background-color: $booking2;
     height: 0.5em;
     border: 0;
 }

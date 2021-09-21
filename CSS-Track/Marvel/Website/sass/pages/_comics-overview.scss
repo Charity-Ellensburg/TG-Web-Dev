@@ -1,0 +1,154 @@
+.wrapper {
+    position:absolute;
+    left:0;
+    top:0;
+    background-image: url(/Media/Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $primary;
+    background-position: center center;
+    width:100%;
+    height:100%;
+
+    .top-wrapper {
+        display: flex;
+        background-color: $primary;
+        margin: 0em 3em;
+        justify-content: center;
+            .openbtn {
+                background-color: $primary;
+                color: $primary-2;
+                font-family: Montersat;
+                border-style: none;
+                justify-content: flex-start;
+            }
+
+            h1 {
+                font-family: Marvel;
+                color: $text;
+            }
+    }
+
+    .overview-wrapper {
+        display: flex;
+        background-color: $secondary;
+        margin: 0em 3em;
+        height: 30em;
+        overflow: hidden;
+        .sidebar {
+            height: 30em;
+            width: 0; 
+            position: fixed; 
+            z-index: 1;
+            background-color: $secondary;
+            overflow-x: hidden; 
+            padding-top: 2em; 
+            transition: 0.5s; 
+            .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+                color: $primary-2;
+                text-decoration: none;
+              }
+        }
+    }
+
+    .active {
+        display: block;
+    }
+
+    .product-overview {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $text;
+        padding: 1em 0em;
+        overflow-y: auto;
+        
+        .product-wrapper {
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: solid 1px black;
+            padding: 0.5em;
+            margin: 0.5em;
+            width: 20em;
+            .title {
+                font-family: Montersat;
+                color:$primary;
+                text-align: center;
+            }
+        }
+
+        .product {
+            display: flex;
+            justify-content: center;
+            background-color:$primary-2;
+            width: 15em;
+            height: 24em;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    #myModal {
+        align-self: center;
+    }
+
+    // The Modal (background) 
+    .modal {
+      display: none; /* Hidden by default */
+      position: sticky; /* Stay in place */
+      z-index: 99; /* Sit on top */
+      left: 0;
+      top: 0px;
+      width: 25%; /* Full width */
+      height: 25%; /* Full height */
+    }
+    //  Modal Content/Box 
+    .modal-content {
+      background-color: $text;
+      margin: 0% auto; /* 15% from the top and centered */
+      padding: 20px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $primary;
+      width: 80%; /* Could be more or less, depending on screen size */
+      height: 50%;
+      
+      img {
+          height: 80%;
+          float: left;
+          margin-right: 0.5em;
+      }
+
+      p {
+          left: 20%;
+      }      
+    }
+
+
+
+    // The Close Button 
+    .close {
+      color: $primary;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: $primary-2;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+}
+
+

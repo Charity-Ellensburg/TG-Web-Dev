@@ -1,0 +1,56 @@
+.animated-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    // left:0;
+    // top:0;
+    background-color: black;
+    width:100%;
+    height:100%;
+
+    .animated-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+        animation: logo-fade-in 3s;
+    }
+    @keyframes logo-fade-in {
+        0% {
+            width: 0%;
+            opacity: 0.1;
+        }
+       
+        100% {
+            width: 25%;
+            font-size: 6em;
+            
+        }
+    }
+}
+
+    .animated-text {
+        flex-wrap: wrap;
+        color: white;
+        font-size: 6em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        animation: fade-in 5s ease-in;
+        }
+
+@keyframes fade-in {
+    0% {
+        font-size: 0em;
+        opacity: 0.1;
+    }
+   
+    100% {
+        font-size: 6em;
+        
+    }
+}
+
+}

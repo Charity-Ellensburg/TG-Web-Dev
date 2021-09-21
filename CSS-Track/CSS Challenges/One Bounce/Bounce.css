@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: black;
+    width: 30em;
+    height: 30em;
+}
+
+.sky {
+    background-color: rgb(0, 225, 255);
+    width:auto;
+    height: 20em;
+}
+
+
+.floor {
+    background-color: rgb(44, 206, 44);
+    width:auto;
+    height:10em;
+}
+
+.ball {
+    position: relative;
+    background-color:white;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    z-index: 1;
+    bottom:25em;
+    left:30em;
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+       bottom: 25em; 
+       left: 30em;
+    }
+
+    50% { 
+        bottom: 13em; 
+        left: 13em;   
+    }
+
+    100% {
+        bottom: 25em;
+        left: -10em;
+    }
+}

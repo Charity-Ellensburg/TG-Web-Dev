@@ -1,0 +1,28 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 30em;
+    height: 40em;
+}
+
+.beach {
+    position: absolute;
+    background-image: url("/images/sean-o-KMn4VEeEPR8-unsplash.jpg");
+    background-size: cover;
+    width: 30em;
+    height: 40em;
+    z-index: 1;
+}
+
+.mountain {
+    position: relative;
+    background-image: url("/images/photo-1512273222628-4daea6e55abb.jpg");
+    width: 30em;
+    height: 40em;
+    z-index: 2;
+    mix-blend-mode: screen;
+}

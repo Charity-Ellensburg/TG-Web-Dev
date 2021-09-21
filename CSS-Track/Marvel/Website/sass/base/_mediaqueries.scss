@@ -1,0 +1,48 @@
+@media all and (max-width: 768px) {
+    // hamburger menu        
+    nav {  
+        .menu {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }   
+         
+        .logo {
+            width:6em;
+            padding: 0em 1em;
+            margin-top: 1em;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: flex-start; 
+        }
+
+        flex-direction: column;
+        .nav-list {
+            background-color: $primary-2;
+            width: 100%;
+            text-align: center;
+            display: none;  
+            padding-left: 0;
+            padding-right:0;
+            z-index: 99;
+            .nav-item {
+                padding-left: 0;
+                padding-right:0;
+                a {
+                    color:$text;
+                    display: block;
+                    padding: 10px 0px;
+                    border-top: 1px solid $text;
+                    &:hover {
+                        background-color: $text;
+                        color: $primary-2;
+                    }
+                }
+            }
+        }
+        .active {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Marvel;
+  src: url(/Fonts/MarvelRegular-Dj83.ttf);
+}
+
+@font-face {
+  font-family: Montersat;
+  src: url(/Fonts/Montserrat-Light.ttf);
+}
+
+nav {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  height: 5em;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+nav .logo {
+  width: 6em;
+  padding: 0em 1em;
+}
+
+nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-list .nav-item {
+  padding: 0em 1em;
+}
+
+nav .nav-list .nav-item a {
+  color: #db3630;
+  text-decoration: none;
+  font-family: Marvel;
+  font-size: 2em;
+}
+
+nav .nav-list .nav-item a:hover {
+  color: #FFFFFF;
+}
+
+nav .menu {
+  padding: 1em;
+  padding-top: 1.6em;
+  display: none;
+}
+
+nav .menu .line {
+  height: 3px;
+  width: 20px;
+  background-color: #db3630;
+  margin-bottom: 4px;
+}
+
+.landing-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.landing-container .banner {
+  position: relative;
+  background-color: #db3630b6;
+  width: 30em;
+  height: 15em;
+  margin-top: 10%;
+}
+
+.landing-container .banner h1 {
+  color: #FFFFFF;
+  font-family: Marvel;
+  text-align: center;
+  font-size: 4em;
+}
+
+.read-now-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.read-now-container #read-now {
+  border-style: solid;
+  border-color: #db3630;
+  padding: 0.2em 1em;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Marvel;
+  font-size: 1.5em;
+}
+
+.read-now-container #read-now:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+}
+
+.login-wrapper .login-container {
+  background-color: #db3630;
+  width: 20em;
+  height: 20em;
+  padding: 2em;
+}
+
+.login-wrapper .login-container form {
+  color: #FFFFFF;
+  font-family: Montersat;
+}
+
+.login-wrapper .login-container input[type=text] {
+  border: solid 1px #FFFFFF;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.login-wrapper .login-container input[type=submit] {
+  margin-top: 6em;
+  border-style: solid;
+  border-color: #db3630;
+  padding: 0.2em 1em;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Marvel;
+  font-size: 1.5em;
+}
+
+.login-wrapper .login-container input[type=submit]:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/Media/Images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .top-wrapper {
+  display: flex;
+  background-color: #000000;
+  margin: 0em 3em;
+  justify-content: center;
+}
+
+.wrapper .top-wrapper .openbtn {
+  background-color: #000000;
+  color: #db3630;
+  font-family: Montersat;
+  border-style: none;
+  justify-content: flex-start;
+}
+
+.wrapper .top-wrapper h1 {
+  font-family: Marvel;
+  color: #FFFFFF;
+}
+
+.wrapper .overview-wrapper {
+  display: flex;
+  background-color: #B3B3B3;
+  margin: 0em 3em;
+  height: 30em;
+  overflow: hidden;
+}
+
+.wrapper .overview-wrapper .sidebar {
+  height: 30em;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #B3B3B3;
+  overflow-x: hidden;
+  padding-top: 2em;
+  transition: 0.5s;
+}
+
+.wrapper .overview-wrapper .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #db3630;
+  text-decoration: none;
+}
+
+.wrapper .active {
+  display: block;
+}
+
+.wrapper .product-overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 1em 0em;
+  overflow-y: auto;
+}
+
+.wrapper .product-overview .product-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid 1px black;
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 20em;
+}
+
+.wrapper .product-overview .product-wrapper .title {
+  font-family: Montersat;
+  color: #000000;
+  text-align: center;
+}
+
+.wrapper .product-overview .product {
+  display: flex;
+  justify-content: center;
+  background-color: #db3630;
+  width: 15em;
+  height: 24em;
+}
+
+.wrapper .product-overview .product:hover {
+  opacity: 0.7;
+}
+
+.wrapper #myModal {
+  align-self: center;
+}
+
+.wrapper .modal {
+  display: none;
+  /* Hidden by default */
+  position: sticky;
+  /* Stay in place */
+  z-index: 99;
+  /* Sit on top */
+  left: 0;
+  top: 0px;
+  width: 25%;
+  /* Full width */
+  height: 25%;
+  /* Full height */
+}
+
+.wrapper .modal-content {
+  background-color: #FFFFFF;
+  margin: 0% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000000;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  height: 50%;
+}
+
+.wrapper .modal-content img {
+  height: 80%;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.wrapper .modal-content p {
+  left: 20%;
+}
+
+.wrapper .close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.wrapper .close:hover,
+.wrapper .close:focus {
+  color: #db3630;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animated-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-wrapper .animated-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-wrapper .animated-logo img {
+  animation: logo-fade-in 3s;
+}
+
+@keyframes logo-fade-in {
+  0% {
+    width: 0%;
+    opacity: 0.1;
+  }
+  100% {
+    width: 25%;
+    font-size: 6em;
+  }
+}
+
+.animated-wrapper .animated-text {
+  flex-wrap: wrap;
+  color: white;
+  font-size: 6em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  animation: fade-in 5s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    font-size: 0em;
+    opacity: 0.1;
+  }
+  100% {
+    font-size: 6em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+  }
+  nav .logo {
+    width: 6em;
+    padding: 0em 1em;
+    margin-top: 1em;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  nav .nav-list {
+    background-color: #db3630;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 99;
+  }
+  nav .nav-list .nav-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  nav .nav-list .nav-item a {
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 0px;
+    border-top: 1px solid #FFFFFF;
+  }
+  nav .nav-list .nav-item a:hover {
+    background-color: #FFFFFF;
+    color: #db3630;
+  }
+  nav .active {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

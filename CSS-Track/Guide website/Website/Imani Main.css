@@ -113,7 +113,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 5em;
+  padding: 1em 5em;
 }
 
 .title {
@@ -137,7 +137,7 @@ body {
   background-color: transparent;
   width: 300px;
   height: 320px;
-  margin-bottom: 5em;
+  margin: 1em 1em;
   perspective: 1000px;
 }
 
@@ -189,7 +189,8 @@ body {
 .bigimg {
   position: relative;
   text-align: center;
-  color: rgba(255, 255, 255, 0.664);
+  color: #ffc600;
+  text-shadow: 5px 5px 1px #7a3b00, -2px -2px 1px #7a3b00;
 }
 
 .intro {
@@ -197,11 +198,20 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadein 3s 2s ease-in;
 }
 
 .intro h1 {
   font-size: 10em;
-  text-shadow: 2px 1px 1px 1px black;
+}
+
+@keyframes fadein {
+  from {
+    top: -350px;
+  }
+  to {
+    top: 50px;
+  }
 }
 
 .about {
@@ -211,6 +221,48 @@ body {
   flex-wrap: wrap;
   padding: 0 5em;
   text-align: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 30em;
+  border-radius: 10px;
+  margin: 2em;
+  padding: 1em;
+}
+
+.right-about-container {
+  width: 20em;
+  background-color: #ffc600;
+  border: 2px solid #7a3b00;
+  border-radius: 10px;
+}
+
+.right-about-container h3 {
+  padding: 0.1em 0;
+}
+
+audio {
+  margin-top: 0;
+}
+
+.left-about-container {
+  width: 50em;
+  background-color: #ffc600;
+  border: 2px solid #7a3b00;
+  border-radius: 10px;
+  margin-right: 1em;
+  object-fit: contain;
+}
+
+.description {
+  background-color: white;
+}
+
+.about-image img {
+  border-radius: 8px 8px 10px 10px;
 }
 
 .footer {
@@ -223,9 +275,21 @@ body {
   padding-left: 0.5em;
 }
 
+@media all and (max-width: 1080px) {
+  .intro {
+    font-size: 0.4em;
+  }
+}
+
 @media all and (max-width: 768px) {
   .intro {
-    font-size: 0.5em;
+    font-size: 0.4em;
+  }
+  .intro-booking h1 {
+    font-size: 1em;
+  }
+  .res-container {
+    padding: 1em 2em;
   }
 }
 
@@ -259,8 +323,14 @@ body {
   .navbar .active {
     display: block;
   }
-  .navbar .intro {
-    font-size: 0.1em;
+  .intro {
+    font-size: 0.5em;
+  }
+  .intro-booking {
+    margin: 0;
+  }
+  .intro-booking h1 {
+    font-size: 0.5em;
   }
   #Btn {
     position: fixed;
@@ -302,23 +372,27 @@ body {
   }
   .intro {
     font-size: 0.2em;
+    text-shadow: 2px 2px 1px #7a3b00, -1px -1px 1px #7a3b00;
   }
   .about {
     font-size: small;
+  }
+  .intro-booking h1 {
+    font-size: 0.4em;
+    text-shadow: 2px 2px 1px #7a3b00, -1px -1px 1px #7a3b00;
   }
 }
 
 .hotspots {
   border-bottom: 2px dotted #a7e6a7;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   position: relative;
 }
 
 .hotspots::after {
   content: "";
   background-image: url(/Images/20_HBD_Animal_1920_1080.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   opacity: 30%;
   top: 0;
@@ -333,6 +407,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0 5em;
 }
 
 .column {
@@ -384,10 +459,6 @@ body {
   background-size: contain;
 }
 
-.carousel {
-  background: #FAFAFA;
-}
-
 .carousel-cell {
   width: 100%;
   margin-right: 10px;
@@ -410,7 +481,6 @@ body {
 
 .booking {
   border-bottom: 2px dotted #a7e6a7;
-  padding-top: 1em;
   padding-bottom: 1em;
   position: relative;
 }
@@ -429,29 +499,89 @@ body {
   z-index: -1;
 }
 
+.header-add {
+  position: relative;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.intro-booking {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: white;
+  text-shadow: 5px 5px 1px #0090d6, -2px -2px 1px #0090d6;
+}
+
+.intro-booking h1 {
+  margin: 0;
+}
+
 .booking-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0 5em;
 }
 
-.flightadd {
-  width: 38em;
-  height: 15em;
-  border: 1px solid lightblue;
+.left-add {
+  background-color: #0090d6;
+  display: flex;
+  justify-content: center;
+  width: 40em;
+  margin-right: 2em;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0.5em;
 }
 
-.form {
-  background-color: #4fa6ec;
+.left-add img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.bookingform {
+  display: flex;
+  background-color: #0090d6;
   border-radius: 10px;
   padding: 1em;
   color: white;
 }
 
+#flight {
+  border: solid 2px white;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+input[type=text] {
+  width: 30%;
+  border-radius: 5px;
+  border: 0;
+}
+
+input[type=text]:focus {
+  background-color: #fae43c;
+}
+
+input[type=button] {
+  background-color: #fae43c;
+  border-radius: 8px;
+  border: 0;
+  padding: 1em;
+  transition: 0.5s;
+  box-shadow: 0px 1px 2px grey;
+}
+
+input[type=button]:hover {
+  background-color: white;
+  color: #0090d6;
+}
+
 hr {
-  background-color: #ffe600;
+  background-color: #fae43c;
   height: 0.5em;
   border: 0;
 }

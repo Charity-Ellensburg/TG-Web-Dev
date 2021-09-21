@@ -1,0 +1,14 @@
+@mixin button-style {  
+    border-style: solid;
+    border-color: $primary-2;
+    padding: 0.2em 1em;
+    background-color: $text;
+    color: $primary;
+    font-family: Marvel;
+    font-size: 1.5em;
+    &:hover {
+        background-color: $primary;
+        color: $text;
+        border-color: $text;
+    }
+}

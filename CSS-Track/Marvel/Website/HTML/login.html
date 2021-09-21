@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marvel Comics-login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Sass/Main.css">
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img id="logo" src="/Media/Images/Marvel_Logo.svg.png" width="100%">
+            </a>
+        </div>
+        <ul class=nav-list>
+            <li class=nav-item><a href="Marvel-Index.html">HOME</a></li>
+            <li class=nav-item><a href="#">ABOUT</a></li>
+            <li class=nav-item><a href="comics.html">COMICS</a></li>
+            <li class=nav-item><a href="login.html">LOGIN</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <div class="login-wrapper">
+        <div class="login-container">
+            <form>
+                <label for="fname">USERNAME:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Username"><br><br>
+                <label for="lname">PASSWORD:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="******"><br><br>
+                <input type="submit" value="LOGIN"> 
+            </form>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="/Marvel.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.login-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+
+    .login-container {
+        background-color: $primary-2;
+        width: 20em;
+        height: 20em;
+        padding: 2em ;
+        form {
+            color: $text;
+            font-family: Montersat;
+        }
+        input[type=text] {
+            border: solid 1px $text;
+            padding:0.5em;
+            width:100%;
+        }
+
+        input[type=submit] {
+            margin-top: 6em;
+            @include button-style
+        }
+    }
+}

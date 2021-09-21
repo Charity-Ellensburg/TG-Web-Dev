@@ -1,13 +1,12 @@
 .hotspots {
     border-bottom: 2px dotted $primary-3;
     padding-top: 1em;
-    padding-bottom: 1em
-    ;
+    padding-bottom: 3em;
     position: relative;
     &::after {
         content: "";
         background-image: url(/Images/20_HBD_Animal_1920_1080.jpg);
-        background-repeat: no-repeat;
+        // background-repeat: no-repeat;
         background-size: cover;
         opacity: 30%;
         top: 0;
@@ -23,6 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 5em;
 }
 .column {
     background-color:$primary-3;
@@ -80,9 +80,9 @@
     background-size: contain;
   }
 
-.carousel {
-    background: #FAFAFA;
-  }
+// .carousel {
+//     background: #FAFAFA;
+//   }
   
   .carousel-cell {
     width: 100%;

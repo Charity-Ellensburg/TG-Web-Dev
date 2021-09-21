@@ -1,7 +1,25 @@
+@media all and (max-width: 1080px) {
+    // header photo text
+    .intro {
+        font-size:0.4em;
+    }
+}
+
 @media all and (max-width: 768px) {
     // header photo text
     .intro {
-        font-size:0.5em;
+        font-size:0.4em;
+    }
+
+    // booking section
+    .intro-booking {
+            h1 {
+        font-size: 1em;
+            }
+    }
+
+    .res-container {
+        padding: 1em 2em ;
     }
 }
 
@@ -39,11 +57,18 @@
         .active {
             display: block;
         }
-
+    }
         // header photo text
         .intro {
-            font-size:0.1em;
+            font-size:0.5em;
         }
+
+        // booking section
+        .intro-booking {
+            margin:0;
+            h1 {
+            font-size: 0.5em;
+            }
     }
 
 // back to top
@@ -92,11 +117,20 @@
 // header photo text
     .intro {
         font-size:0.2em;
+        text-shadow: 2px 2px 1px $text, -1px -1px 1px $text;
     }
 
 // about section      
     .about {
         font-size: small;
+    }
+
+// booking section
+    .intro-booking {
+            h1 {
+        font-size: 0.4em;
+        text-shadow: 2px 2px 1px $text, -1px -1px 1px $text;
+            }
     }
 
 
