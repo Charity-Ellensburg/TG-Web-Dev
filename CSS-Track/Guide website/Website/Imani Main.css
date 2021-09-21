@@ -113,7 +113,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
   padding: 1em 5em;
+=======
+  padding: 0 5em;
+>>>>>>> master
 }
 
 .title {
@@ -137,7 +141,11 @@ body {
   background-color: transparent;
   width: 300px;
   height: 320px;
+<<<<<<< HEAD
   margin: 1em 1em;
+=======
+  margin-bottom: 5em;
+>>>>>>> master
   perspective: 1000px;
 }
 
@@ -189,8 +197,12 @@ body {
 .bigimg {
   position: relative;
   text-align: center;
+<<<<<<< HEAD
   color: #ffc600;
   text-shadow: 5px 5px 1px #7a3b00, -2px -2px 1px #7a3b00;
+=======
+  color: rgba(255, 255, 255, 0.664);
+>>>>>>> master
 }
 
 .intro {
@@ -198,11 +210,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+<<<<<<< HEAD
   animation: fadein 3s 2s ease-in;
+=======
+>>>>>>> master
 }
 
 .intro h1 {
   font-size: 10em;
+<<<<<<< HEAD
 }
 
 @keyframes fadein {
@@ -212,6 +228,9 @@ body {
   to {
     top: 50px;
   }
+=======
+  text-shadow: 2px 1px 1px 1px black;
+>>>>>>> master
 }
 
 .about {
@@ -223,6 +242,7 @@ body {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .about-container {
   display: flex;
   justify-content: space-around;
@@ -265,6 +285,8 @@ audio {
   border-radius: 8px 8px 10px 10px;
 }
 
+=======
+>>>>>>> master
 .footer {
   display: flex;
   background-color: #04b404;
@@ -275,6 +297,7 @@ audio {
   padding-left: 0.5em;
 }
 
+<<<<<<< HEAD
 @media all and (max-width: 1080px) {
   .intro {
     font-size: 0.4em;
@@ -290,6 +313,11 @@ audio {
   }
   .res-container {
     padding: 1em 2em;
+=======
+@media all and (max-width: 768px) {
+  .intro {
+    font-size: 0.5em;
+>>>>>>> master
   }
 }
 
@@ -323,6 +351,7 @@ audio {
   .navbar .active {
     display: block;
   }
+<<<<<<< HEAD
   .intro {
     font-size: 0.5em;
   }
@@ -331,6 +360,10 @@ audio {
   }
   .intro-booking h1 {
     font-size: 0.5em;
+=======
+  .navbar .intro {
+    font-size: 0.1em;
+>>>>>>> master
   }
   #Btn {
     position: fixed;
@@ -372,27 +405,41 @@ audio {
   }
   .intro {
     font-size: 0.2em;
+<<<<<<< HEAD
     text-shadow: 2px 2px 1px #7a3b00, -1px -1px 1px #7a3b00;
+=======
+>>>>>>> master
   }
   .about {
     font-size: small;
   }
+<<<<<<< HEAD
   .intro-booking h1 {
     font-size: 0.4em;
     text-shadow: 2px 2px 1px #7a3b00, -1px -1px 1px #7a3b00;
   }
+=======
+>>>>>>> master
 }
 
 .hotspots {
   border-bottom: 2px dotted #a7e6a7;
   padding-top: 1em;
+<<<<<<< HEAD
   padding-bottom: 3em;
+=======
+  padding-bottom: 1em;
+>>>>>>> master
   position: relative;
 }
 
 .hotspots::after {
   content: "";
   background-image: url(/Images/20_HBD_Animal_1920_1080.jpg);
+<<<<<<< HEAD
+=======
+  background-repeat: no-repeat;
+>>>>>>> master
   background-size: cover;
   opacity: 30%;
   top: 0;
@@ -407,7 +454,10 @@ audio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+<<<<<<< HEAD
   padding: 0 5em;
+=======
+>>>>>>> master
 }
 
 .column {
@@ -459,6 +509,13 @@ audio {
   background-size: contain;
 }
 
+<<<<<<< HEAD
+=======
+.carousel {
+  background: #FAFAFA;
+}
+
+>>>>>>> master
 .carousel-cell {
   width: 100%;
   margin-right: 10px;
@@ -481,6 +538,10 @@ audio {
 
 .booking {
   border-bottom: 2px dotted #a7e6a7;
+<<<<<<< HEAD
+=======
+  padding-top: 1em;
+>>>>>>> master
   padding-bottom: 1em;
   position: relative;
 }
@@ -499,6 +560,7 @@ audio {
   z-index: -1;
 }
 
+<<<<<<< HEAD
 .header-add {
   position: relative;
   height: auto;
@@ -545,11 +607,30 @@ audio {
 .bookingform {
   display: flex;
   background-color: #0090d6;
+=======
+.booking-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5em;
+}
+
+.flightadd {
+  width: 38em;
+  height: 15em;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form {
+  background-color: #4fa6ec;
+>>>>>>> master
   border-radius: 10px;
   padding: 1em;
   color: white;
 }
 
+<<<<<<< HEAD
 #flight {
   border: solid 2px white;
   border-radius: 10px;
@@ -582,6 +663,10 @@ input[type=button]:hover {
 
 hr {
   background-color: #fae43c;
+=======
+hr {
+  background-color: #ffe600;
+>>>>>>> master
   height: 0.5em;
   border: 0;
 }

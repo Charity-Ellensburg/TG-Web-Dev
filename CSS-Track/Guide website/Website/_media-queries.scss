@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media all and (max-width: 1080px) {
     // header photo text
     .intro {
@@ -20,6 +21,12 @@
 
     .res-container {
         padding: 1em 2em ;
+=======
+@media all and (max-width: 768px) {
+    // header photo text
+    .intro {
+        font-size:0.5em;
+>>>>>>> master
     }
 }
 
@@ -57,6 +64,7 @@
         .active {
             display: block;
         }
+<<<<<<< HEAD
     }
         // header photo text
         .intro {
@@ -69,6 +77,13 @@
             h1 {
             font-size: 0.5em;
             }
+=======
+
+        // header photo text
+        .intro {
+            font-size:0.1em;
+        }
+>>>>>>> master
     }
 
 // back to top
@@ -117,7 +132,10 @@
 // header photo text
     .intro {
         font-size:0.2em;
+<<<<<<< HEAD
         text-shadow: 2px 2px 1px $text, -1px -1px 1px $text;
+=======
+>>>>>>> master
     }
 
 // about section      
@@ -125,6 +143,7 @@
         font-size: small;
     }
 
+<<<<<<< HEAD
 // booking section
     .intro-booking {
             h1 {
@@ -133,5 +152,7 @@
             }
     }
 
+=======
+>>>>>>> master
 
 }
